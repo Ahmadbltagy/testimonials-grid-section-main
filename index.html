@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Barlow Semi Condensed", sans-serif;
+        background-color: hsl(0, 0%, 100%);
+      }
+      .container {
+        width: 1300px;
+        margin: 100px auto;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: auto auto;
+        gap: 30px;
+      }
+      .dan,
+      .jon,
+      .kira,
+      .jean,
+      .pat {
+        padding: 20px 32px;
+      }
+      .card {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+        border-radius: 10px;
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+      }
+
+      .name {
+        color: #fff;
+      }
+      .title {
+        color: hsl(0, 0%, 81%);
+      }
+      .quote {
+        position: absolute;
+        width: 110px;
+        top: 0;
+        right: 80px;
+        z-index: -1;
+      }
+      .author {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        margin-bottom: 20px;
+      }
+      .pat {
+        background-color: hsl(219, 29%, 14%);
+        grid-column: 2/4;
+      }
+
+      .author-pic {
+        border-radius: 50%;
+        border: 2px solid #fff;
+        width: 42px;
+      }
+      .author-quote {
+        color: #fff;
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      .author-txt {
+        color: hsl(0, 0%, 81%);
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      .dan {
+        background-color: hsl(263, 55%, 52%);
+        grid-column: 1/3;
+        position: relative;
+        z-index: 0;
+      }
+      .jon {
+        background-color: hsl(217, 19%, 35%);
+      }
+
+      .kira .name,
+      .jean .name {
+        color: hsl(219, 29%, 14%);
+      }
+      .kira .author-quote,
+      .jean .author-quote {
+        color: hsl(217, 19%, 35%);
+      }
+      .kira {
+        grid-column: 4/-1;
+        grid-row: 1/-1;
+      }
+
+      .kira .author-quote {
+        font-size: 24px;
+      }
+      .kira .author-txt {
+        font-size: 18px;
+      }
+      .jean {
+        padding: 18px 42px;
+      }
+      .jean .author-quote {
+        font-size: 32px;
+      }
+      .jean .author-txt {
+        width: 90%;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card dan">
+        <img class="quote" src="./images/bg-pattern-quotation.svg" alt="Svg" />
+        <div class="author">
+          <img class="author-pic" src="images/image-daniel.jpg" alt="daneil" />
+          <div class="author-details">
+            <p class="name">Daniel Clifford</p>
+            <p class="title">Verified Graduate</p>
+          </div>
+        </div>
+
+        <p class="author-quote">
+          I received a job offer mid-course, and the subjects I learned were
+          current, if not more so, in the company I joined. I honestly feel I
+          got every penny’s worth.
+        </p>
+
+        <p class="author-txt">
+          “ I was an EMT for many years before I joined the bootcamp. I’ve been
+          looking to make a transition and have heard some people who had an
+          amazing experience here. I signed up for the free intro course and
+          found it incredibly fun! I enrolled shortly thereafter. The next 12
+          weeks was the best - and most grueling - time of my life. Since
+          completing the course, I’ve successfully switched careers, working as
+          a Software Engineer at a VR startup. ”
+        </p>
+      </div>
+
+      <div class="card jon">
+        <div class="author">
+          <img
+            class="author-pic"
+            src="./images/image-jonathan.jpg"
+            alt="Jonathan"
+          />
+          <div class="author-details">
+            <p class="name">Jonathan Walters</p>
+            <p class="title">Verified Graduate</p>
+          </div>
+        </div>
+
+        <p class="author-quote">
+          The team was very supportive and kept me motivated
+        </p>
+
+        <p class="author-txt">
+          “ I started as a total newbie with virtually no coding skills. I now
+          work as a mobile engineer for a big company. This was one of the best
+          investments I’ve made in myself. ”
+        </p>
+      </div>
+
+      <div class="card jean">
+        <div class="author">
+          <img
+            class="author-pic"
+            src="./images/image-jeanette.jpg"
+            alt="Jeanette"
+          />
+          <div class="author-details">
+            <p class="name">Jeanette Harmon</p>
+            <p class="title">Verified Graduate</p>
+          </div>
+        </div>
+
+        <p class="author-quote">
+          An overall wonderful and rewarding experience
+        </p>
+
+        <p class="author-txt">
+          “ Thank you for the wonderful experience! I now have a job I really
+          enjoy, and make a good living while doing something I love. ”
+        </p>
+      </div>
+
+      <div class="card pat">
+        <div class="author">
+          <img
+            class="author-pic"
+            src="./images/image-patrick.jpg"
+            alt="patrick"
+          />
+          <div class="author-details">
+            <p class="name">Patrick Abrams</p>
+            <p class="title">Verified Graduate</p>
+          </div>
+        </div>
+        <p class="author-quote">
+          Awesome teaching support from TAs who did the bootcamp themselves.
+          Getting guidance from them and learning from their experiences was
+          easy.
+        </p>
+
+        <p class="author-txt">
+          “ The staff seem genuinely concerned about my progress which I find
+          really refreshing. The program gave me the confidence necessary to be
+          able to go out in the world and present myself as a capable junior
+          developer. The standard is above the rest. You will get the personal
+          attention you need from an incredible community of smart and amazing
+          people. ”
+        </p>
+      </div>
+
+      <div class="card kira">
+        <div class="author">
+          <img class="author-pic" src="./images/image-kira.jpg" alt="kira" />
+          <div class="author-details">
+            <p class="name">Kira Whittle</p>
+            <p class="title">Verified Graduate</p>
+          </div>
+        </div>
+
+        <p class="author-quote">
+          Such a life-changing experience. Highly recommended!
+        </p>
+
+        <p class="author-txt">
+          “ Before joining the bootcamp, I’ve never written a line of code. I
+          needed some structure from professionals who can help me learn
+          programming step by step. I was encouraged to enroll by a former
+          student of theirs who can only say wonderful things about the program.
+          The entire curriculum and staff did not disappoint. They were very
+          hands-on and I never had to wait long for assistance. The agile team
+          project, in particular, was outstanding. It took my learning to the
+          next level in a way that no tutorial could ever have. In fact, I’ve
+          often referred to it during interviews as an example of my developent
+          experience. It certainly helped me land a job as a full-stack
+          developer after receiving multiple offers. 100% recommend! ”
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
